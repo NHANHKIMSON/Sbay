@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Noto+Sans+Khmer:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Bayon&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Bayon", serif;
+    font-family: "poppins", "Battambang";
 }
 header{
     width: 100%;
@@ -18,6 +18,8 @@ nav{
     background-color: red;
     width: 100%;
     padding-left: 50px;
+    position: sticky;
+    top: 0px;
 }
 nav > ul > li{
     display: inline-block;
@@ -28,6 +30,7 @@ nav >ul > li > a{
     color: #fff;
     font-size: 1.2rem;
     opacity: .8;
+    font-family: "Bayon";
 }
 nav >ul > li > a:hover{
     opacity: 1;
@@ -35,36 +38,113 @@ nav >ul > li > a:hover{
 .active{
     background-color: #33333350;
 }
-main{
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
-}
-main .box{
-    background-color: #a5a5a5;
-}
-main .box:nth-child(1){
-    height: 300px;
-    width: 400px;
 
+
+
+/*  main Section */
+
+main{
+    height: 200vh;
 }
-main .box:nth-child(2){
-    height: 300px;
-    width: 400px;
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
 }
-main .box:nth-child(2){
-    height: 300px;
-    width: 400px;
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
 }
-main .box:nth-child(3){
-    height: 300px;
-    width: 400px;
+.fa-brands{
+    color: #fff;
+    font-size: 24px;
+    opacity: .6;
 }
-main .box:nth-child(4){
-    height: 300px;
-    width: 400px;
+.fa-brands:hover{
+    opacity: 1;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e74c3c;
+    display: inline-block;
+}
+
+.footer-about p {
+    line-height: 1.6;
+}
+.footer-about a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e74c3c;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.footer-social a {
+    display: inline-block;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
 }
